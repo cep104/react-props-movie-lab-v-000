@@ -12,6 +12,7 @@ export default class CardBack extends Component {
 	generateRatingElement = () => {
 		if (this.props.IMDBRating !== null) {
 			return <img src={imgMapper[this.props.IMDBRating]} alt="" />;
+// 			use brackets for expressions so it would be imgMapper[1] ect
 		}
 		return <h4>No Rating Found</h4>;
 	};
@@ -24,6 +25,7 @@ export default class CardBack extends Component {
 				{this.generateRatingElement()}
 				<span />
 				<h5 className="genres">{this.props.genres.join(', ')}</h5>
+// 				if you look at previous lesson it shows how to do this
 			</div>
 		);
 	}
